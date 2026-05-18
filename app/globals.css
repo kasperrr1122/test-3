@@ -1,15 +1,12 @@
-import type { Metadata } from "next";
-import "./globals.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-export const metadata: Metadata = {
-  title: "Hoveniersbedrijf John Klaassen | Compleet voor uw tuin",
-  description: "Hoveniersbedrijf John Klaassen in Gilze voor tuinaanleg, tuinonderhoud, advies en projecten.",
-};
+html {
+  scroll-behavior: smooth;
+}
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="nl">
-      <body>{children}</body>
-    </html>
-  );
+body {
+  margin: 0;
+  padding: 0;
 }
